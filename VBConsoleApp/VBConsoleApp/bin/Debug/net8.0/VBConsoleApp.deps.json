@@ -1,0 +1,57 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "VBConsoleApp/1.0.0": {
+        "dependencies": {
+          "Astronomy": "1.0.1",
+          "SunCalcNet": "1.2.2"
+        },
+        "runtime": {
+          "VBConsoleApp.dll": {}
+        }
+      },
+      "Astronomy/1.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Astronomy.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SunCalcNet/1.2.2": {
+        "runtime": {
+          "lib/net7.0/SunCalcNet.dll": {
+            "assemblyVersion": "1.2.2.0",
+            "fileVersion": "1.2.2.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VBConsoleApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Astronomy/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cYwTrp0VN0rlUYDv6rkfYi38Z0un+WN9aU6r9i5a5YvjpWDWoyEd+3avlrlZHS8XXKZU1Ij+ZQnwqOiTRloG3g==",
+      "path": "astronomy/1.0.1",
+      "hashPath": "astronomy.1.0.1.nupkg.sha512"
+    },
+    "SunCalcNet/1.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pkrEeXfEXs27LN8mphgsm1Ze26XNpy8j7i/Q+amrbk6qnJ3VVXxxegkUqVh44x87RVedcKtkKnf02JJtIhj9Gg==",
+      "path": "suncalcnet/1.2.2",
+      "hashPath": "suncalcnet.1.2.2.nupkg.sha512"
+    }
+  }
+}

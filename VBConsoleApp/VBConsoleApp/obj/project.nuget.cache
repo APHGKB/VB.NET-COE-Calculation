@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hrqUfG+nJA9uMHrBGvBvLmN9P5Axtdkuti0/6nkE9LL47fM8ULhVyL6d7AWpIdJ/EwwnkZ0ogKb1uX383lNWQA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\APH\\Documents\\VB.net Tutorial\\VBConsoleApp\\VBConsoleApp\\VBConsoleApp.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\APH\\.nuget\\packages\\astronomy\\1.0.1\\astronomy.1.0.1.nupkg.sha512",
+    "C:\\Users\\APH\\.nuget\\packages\\suncalcnet\\1.2.2\\suncalcnet.1.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

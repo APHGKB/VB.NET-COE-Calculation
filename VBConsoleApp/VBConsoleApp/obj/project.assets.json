@@ -1,0 +1,134 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Astronomy/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Astronomy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Astronomy.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SunCalcNet/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/SunCalcNet.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/SunCalcNet.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Astronomy/1.0.1": {
+      "sha512": "cYwTrp0VN0rlUYDv6rkfYi38Z0un+WN9aU6r9i5a5YvjpWDWoyEd+3avlrlZHS8XXKZU1Ij+ZQnwqOiTRloG3g==",
+      "type": "package",
+      "path": "astronomy/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "astronomy.1.0.1.nupkg.sha512",
+        "astronomy.nuspec",
+        "lib/netstandard2.0/Astronomy.dll",
+        "lib/netstandard2.0/Astronomy.xml"
+      ]
+    },
+    "SunCalcNet/1.2.2": {
+      "sha512": "pkrEeXfEXs27LN8mphgsm1Ze26XNpy8j7i/Q+amrbk6qnJ3VVXxxegkUqVh44x87RVedcKtkKnf02JJtIhj9Gg==",
+      "type": "package",
+      "path": "suncalcnet/1.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/SunCalcNet.dll",
+        "lib/net6.0/SunCalcNet.dll",
+        "lib/net7.0/SunCalcNet.dll",
+        "lib/netstandard2.0/SunCalcNet.dll",
+        "lib/netstandard2.1/SunCalcNet.dll",
+        "suncalcnet.1.2.2.nupkg.sha512",
+        "suncalcnet.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Astronomy >= 1.0.1",
+      "SunCalcNet >= 1.2.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\APH\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\APH\\Documents\\VB.net Tutorial\\VBConsoleApp\\VBConsoleApp\\VBConsoleApp.vbproj",
+      "projectName": "VBConsoleApp",
+      "projectPath": "C:\\Users\\APH\\Documents\\VB.net Tutorial\\VBConsoleApp\\VBConsoleApp\\VBConsoleApp.vbproj",
+      "packagesPath": "C:\\Users\\APH\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\APH\\Documents\\VB.net Tutorial\\VBConsoleApp\\VBConsoleApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\APH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Astronomy": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
+          "SunCalcNet": {
+            "target": "Package",
+            "version": "[1.2.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
