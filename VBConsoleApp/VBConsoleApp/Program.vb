@@ -182,7 +182,7 @@ Module Program
         Console.WriteLine("Nihongo " + calculateDate.ToString + " days")
         Console.WriteLine("----------------")
         'Check
-        Console.WriteLine(nyugokudate.Year.ToString + "/ " + nyugokudate.Month.ToString + "/ " + nyugokudate.Day.ToString + "    " + calculateDate.ToString)
+        Console.WriteLine(nyugokudate.Year.ToString + "/ " + nyugokudate.Month.ToString + "/ " + nyugokudate.Day.ToString + "    [" + calculateDate.ToString + "]")
         While dayCount <> calculateDate
             nyukokuEndDate = nyugokudate.AddDays(-startpoint)
             startpoint += 1
@@ -192,7 +192,7 @@ Module Program
                 Continue While
             End If
             dayCount += 1
-            Console.WriteLine(nyukokuEndDate.Year.ToString + "/ " + nyukokuEndDate.Month.ToString + "/ " + nyukokuEndDate.Day.ToString + "        " + ((calculateDate + 1) - dayCount).ToString)
+            Console.WriteLine(nyukokuEndDate.Year.ToString + "/ " + nyukokuEndDate.Month.ToString + "/ " + nyukokuEndDate.Day.ToString + "        [" + ((calculateDate + 1) - dayCount).ToString + "]")
         End While
         Console.WriteLine("----------------")
         outputResult()
@@ -253,7 +253,7 @@ Module Program
         Return dateCheck.DayOfWeek = DayOfWeek.Saturday Or dateCheck.DayOfWeek = DayOfWeek.Sunday
     End Function
 
-    'Check year
+    'Check Year
     Function checkYear(input_year As String) As Boolean
         Dim now_year As Integer = DateTime.Now.Year
         If input_year.Length < 5 Then
@@ -264,6 +264,7 @@ Module Program
         Return False
     End Function
 
+    'Check Month
     Function checkMonth(input_month As String) As Boolean
         'Console.WriteLine(CInt(input_month) > 1 And CInt(input_month) < 12)
         If CInt(input_month) >= 1 And CInt(input_month) <= 12 Then
@@ -272,6 +273,7 @@ Module Program
         Return False
     End Function
 
+    'Check Day
     Function checkDay(input_day As String, input_month As String) As Boolean
         Dim thtyO() As Integer = {1, 3, 5, 7, 8, 10, 12}
         Dim thty() As Integer = {4, 6, 9, 11}
@@ -298,6 +300,8 @@ Module Program
         Return False
         'Edit
     End Function
+
+    'Check CalculateDate 60 or 66
     Function checkCalculateDate(caldate As Integer) As Boolean
         If caldate = 60 Or caldate = 66 Then
             Return True
@@ -325,10 +329,12 @@ Module Program
         Return False
     End Function
 
+    'create date fomat [yyyy/ mm/ dd]
     Function customFormatString(label As String, myYear As Integer, myMonth As Integer, myDay As Integer) As String
         Return String.Format("{0} : {1}/ {2}/ {3}", {label, myYear.ToString, myMonth.ToString, myDay.ToString})
     End Function
 
+    'Create Sakusei Date
     Function calculateSakuSeiDate() As String()
         Dim tempDate() As String
         If CInt(ECdate(1)) > CInt(interviewDate(1)) Then
@@ -364,6 +370,8 @@ Module Program
             End If
         End If
     End Function
+
+    'Output
     Function outputResult()
         Dim course_end_date As DateTime = nyukokuEndDate.AddMonths(-1)
         Dim course_start_date As DateTime = course_end_date.AddMonths(-3)
